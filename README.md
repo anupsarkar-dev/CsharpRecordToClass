@@ -12,6 +12,7 @@ Now we want to convert it to a class or vice versa
 
 Here is the simple C# program to do it:
 
+```
 string RecortToClass(string input)
 {
 string recordNamePattern = @"\s+record\s+(\w+)";
@@ -36,3 +37,4 @@ result.Append($"\n \t public {type} {name} {{ get; set; }}");
 result.Append($"\n}}");
 return result.ToString();
 }
+```
